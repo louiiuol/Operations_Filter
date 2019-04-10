@@ -1,0 +1,50 @@
+<mat-card  class="searchForm">
+  <mat-card-content class="input-rows" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px" >
+      <form action="#" fxFlex>
+        <mat-form-field fxFlex appearance="outline">
+          <mat-select placeholder="Champs" name="fieldInput" [(ngModel)]="fieldInput" (change)="selectChangeHandler($event)">
+            <mat-option value="label">Libellé</mat-option>
+            <mat-option value="type">Type d'opération</mat-option>
+            <mat-option value="compte">Compte</mat-option>
+            <mat-option value="id">Identifiant</mat-option>
+            <mat-option value="date">Date</mat-option>
+            <mat-option value="amount">montant</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field  appearance="outline" fxFlex *ngIf="fieldInput ==='amount' || fieldInput ==='date'">
+          <mat-select  [(ngModel)]="rangeInput" name="filter" placeholder="Specifier your range">
+            <mat-option value="gte">≥</mat-option>
+            <mat-option value="gt">></mat-option>
+            <mat-option value="lte">≤</mat-option>
+            <mat-option value="lt"><</mat-option>
+            <mat-option value="exact">=</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex *ngIf=" fieldInput ==='label' || fieldInput ==='id' || fieldInput ==='compte'">
+          <mat-label>Type in here</mat-label>
+          <input matInput [(ngModel)]="valueInput" name="valueInput" type="text">
+         </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex *ngIf=" fieldInput ==='type'" >
+          <mat-select [(ngModel)]="valueInput" name="filter">
+            <mat-option *ngFor="let type of getTypes()" [value]="type">{{type.toLowerCase()}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex *ngIf=" fieldInput ==='amount'">
+          <mat-label>Type in here</mat-label>
+          <input matInput [(ngModel)]="valueInput" name="valueInput" type="number">
+        </mat-form-field>
+
+        <mat-form-field  appearance="outline" fxFlex *ngIf=" fieldInput ==='date'">
+          <input [(ngModel)]="valueInput" name="date" matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+          <button mat-raised-button color="primary" (click)="searchOperation()">Rechercher</button>
+
+
+      </form>
+  </mat-card-content>
+</mat-card>

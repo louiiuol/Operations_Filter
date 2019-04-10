@@ -1,0 +1,4 @@
+<section fxLayout="column wrap">
+  <app-search-form></app-search-form>
+  <app-data-table *ngIf="operationService.submitted" [requestUrl]="operationService.requestUrl"></app-data-table>
+</section>

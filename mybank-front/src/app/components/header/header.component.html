@@ -1,0 +1,11 @@
+<mat-toolbar fxFlex [fxFlex.gt-lg]="">
+  <section fxFlex fxLayout fxLayoutAlign="start">
+    <a routerLink="/dashboard"> <img alt="logo" class="nav-logo" src="{{this.logoSrc}}"></a>
+  </section>
+  <section fxFlex fxLayout fxLayoutAlign="end">
+    <ul fxLayout fxLayoutGap="35px" class="navigation-items">
+      <li><a routerLink="/dashboard">Dashboard</a></li>
+      <li><a routerLink="/login">Connexion</a></li>
+    </ul>
+  </section>
+</mat-toolbar>

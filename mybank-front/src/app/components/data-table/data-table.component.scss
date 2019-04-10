@@ -1,0 +1,89 @@
+.data-table {
+  margin: 15px auto;
+  width: 60vw;
+  position: relative;
+  max-height: 800px;
+  overflow: auto;
+  .paginator {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  table {
+  width: 100%;
+    td  {
+      color: #FFFFFF;
+    }
+    .mat-sort-header-button.mat-sort-header-button {
+      text-transform: uppercase;
+    }
+    tr.detail-row {
+      height: 0;
+    }
+    .element-row {
+      cursor: pointer;
+        .success {
+          background-color: #2ecc71 !important;
+        }
+        .fail {
+          background-color: #e74c3c !important;
+        }
+      }
+  }
+  .detailed-view {
+    position: relative;
+    overflow: hidden;
+    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    background: #fafafa;
+    width: 90%;
+    color: #222 !important;
+    box-sizing: border-box;
+    padding-top: 25px;
+    .amount, .type {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 15px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+    .type {
+      right: 15px;
+      left: auto;
+    }
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      width: 50%;
+      margin: 15px auto;
+      background: #FFFFFF;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      text-align: center;
+      color: #555555;
+      padding: .85em;
+    }
+    .informations {
+      justify-content: space-evenly;
+      margin-bottom: 25px;
+      mat-card {
+        justify-content: space-evenly;
+      }
+      button, mat-icon, span {
+        align-self: center;
+      }
+      button {
+        height: 50px;
+      }
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+    }
+  }
+}
+
+

@@ -1,0 +1,36 @@
+<div class="mat-elevation-z8  data-table">
+  <table  mat-table [dataSource]="data"  matSort matSortActive="date"  matSortDirection="desc" multiTemplateDataRows >
+    <ng-container matColumnDef="{{row}}" *ngFor="let row of displayedColumns">
+      <th mat-sort-header="{{row}}" mat-header-cell *matHeaderCellDef> {{row}} </th>
+      <td mat-cell  *matCellDef="let el" [ngClass]="{'success': el.isCredential , 'fail': !el.isCredential}">
+        <span *ngIf="row === 'label' ">{{el.label | uppercase }}</span>
+        <span *ngIf="row === 'account' ">{{el.account | accountFormatter }}</span>
+        <span *ngIf="row === 'date' ">{{el.date | date:'dd/mm/yyyy - hh:mm a'}}</span>
+        <span *ngIf="row === 'amount' ">{{el.amount}}  &euro; </span>
+        <span *ngIf="row === 'type' ">{{el.type | uppercase}} </span>
+      </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="expandedDetail">
+      <td class="detailed-view" mat-cell *matCellDef="let el" [attr.colspan]="displayedColumns.length" [@detailExpand]="el == expandedElement ? 'expanded' : 'collapsed'">
+        <mat-chip-list>
+          <mat-chip class="amount" color="accent" selected>{{el.amount}} &euro; </mat-chip>
+          <mat-chip class="type" color="accent" selected>{{el.type}}</mat-chip>
+        </mat-chip-list>
+        <h2>{{ el.label }}</h2>
+        <div class="flex-line informations">
+            <mat-card class="flex-line"><mat-icon>vpn_key</mat-icon><span>{{el.id}}</span></mat-card>
+            <mat-card class="flex-line"><mat-icon>account_box</mat-icon><span>{{el.account  | accountFormatter }}</span></mat-card>
+            <mat-card class="flex-line"><mat-icon>date_range</mat-icon><span>{{el.date | date:'dd/mm/yyyy à hh:mm a'}}</span></mat-card>
+            <button mat-raised-button color="warn"><mat-icon>delete</mat-icon></button>
+        </div>
+      </td>
+    </ng-container>
+  
+    <tr  mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let element; columns: displayedColumns;" class="element-row" [class.expanded-row]="expandedElement === element" (click)="expandedElement = expandedElement === element ? null : element"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[1, 5, 10, 25, 100]" [length]="resultsLength" showFirstLastButtons class="paginator"></mat-paginator>
+  <mat-progress-bar *ngIf="isLoadingResults" mode="indeterminate"></mat-progress-bar>
+</div>
