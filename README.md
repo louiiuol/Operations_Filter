@@ -12,15 +12,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them:
 
-```
-JDK 1.8
-Maven
-Spring
-Elastic Search
-Node.js
-```
+* [JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Maven](https://maven.apache.org/)
+* [Spring](https://spring.io/)
+* [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html)
+* [Node.js](https://nodejs.org/en/)
+* [Angular X](https://angular.io/) - JS Framework
+* [Angular Material](https://material.angular.io/components/categories) - CSS & JS Framework
 
 ### Installing
 
@@ -51,8 +51,8 @@ Once these steps are completed, got to the following [url] (http://localhost:420
 
 To add new Operation follow these step: 
 ```
-Open Postman or any software capable of CRUD operation 
-create a POST request with a body request JSON file as follow: 
+- Open Postman or any software capable of CRUD operation 
+- create a POST request with a body request JSON file as follow: 
 {
 "label": "Your label",  (20 characters max)
 "amount": XXX.XX,  (2 digits decimals only)
@@ -73,8 +73,9 @@ Tests are not implemented yet!
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Spring](https://spring.io/) - Java Framework
 * [Angular X](https://angular.io/) - JS Framework
-* [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html) - Database Search
 * [Angular Material](https://material.angular.io/components/categories) - CSS & JS Framework
+* [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html) - Database Search
+
 
 ## Contributing
 
