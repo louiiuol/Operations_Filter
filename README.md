@@ -46,9 +46,9 @@ cd ./Operations_Filter/mybank-api/
 npm init
 npm start 
 ```
-#
+
 Once these steps are completed, got to the following [url](http://localhost:4200/) to access homepage. 
-#
+---
 On first launch, the database is empty. In order to add new Operations, you need to follow these steps:
 ###### *Link for field [types](https://github.com/louiiuol/Operations_Filter/blob/master/mybank-api/src/main/java/com/mybank/app/entities/OperationType.java)*
 ```
