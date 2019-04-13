@@ -26,21 +26,21 @@ What things you need to install the software and how to install them:
 
 A step by step series that tell you how to get the development env running. Once you cloned the repository in your favorite workspace, there is 3 parts (each in a new tab) in order to launch the app. 
 
-Launching Elastic Search: (need to be [installed](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) before)
+#### Launching Elastic Search: (need to be [installed](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) before)
 
 ```
 cd ./ElasticSearchFolder/bin
 elasticsearch
 ```
 
-Launching API: 
+#### Launching API: 
 ```
 cd ./Operations_Filter/mybank-api/
 mvn update
 mvn spring-boot:run -f pom.xml
 ```
 
-Launching Angular Server:
+#### Launching Angular Server:
 ```
 cd ./Operations_Filter/mybank-api/
 ng build
@@ -48,10 +48,7 @@ ng serve
 ```
 
 #### Once these steps are completed, got to the following [url](http://localhost:4200/) to access homepage. 
-
----
-
-##### On first launch, the database is empty. In order to add new Operations, you need to follow these steps:
+##### Notice that on first launch, the database is empty. in order to add new operations, you need to follow these steps:
 ###### *Link for field [types](https://github.com/louiiuol/Operations_Filter/blob/master/mybank-api/src/main/java/com/mybank/app/entities/OperationType.java)*
 ```
 - Open Postman or any software capable of CRUD operation 
@@ -64,7 +61,7 @@ ng serve
 "type": "TRANSFER" (Refer to the link below)
 }
 ```
-
+---
 
 ## Running the tests
 
