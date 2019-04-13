@@ -80,4 +80,4 @@ Please read [CONTRIBUTING.md](https://gist.github.com/louiiuol/f1ca9436c877c85f3
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC V2 License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the GNU GENERAL PUBLIC V2 License - see the [LICENSE](LICENSE) file for details
