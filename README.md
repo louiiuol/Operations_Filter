@@ -63,7 +63,6 @@ npm start
 "account": "XXXXX XXXXX XXXXXX XXX XX", (Account number as a String)
 "type": "TRANSFER" (Refer to the link below)
 }
-
 ```
 
 
