@@ -1,10 +1,10 @@
 # Operations Filter
 <img src="http://phronesis-partners.com/sra/wp-content/uploads/2017/07/Investment-Bankin-1.jpg" title="OperationFilter" alt="Operation_Filter">
 
-An application to manage your Banking Operation by: 
-* Adding new Operations
+An application to manage your banking operations by: 
+* Adding new operations
 * Find them with advanced search bar
-* Display and sort them as u like (Sorting and Pagination)
+* Display and sort them as you like (sorting and pagination)
 
 ## Getting Started
 
@@ -65,11 +65,11 @@ ng serve
 
 ## Running the tests
 
-Tests are not implemented yet! 
+*Tests are not implemented yet!*
 
 ## Contributing
 
-Please read [CONTRIBUTING](https://gist.github.com/louiiuol/f1ca9436c877c85f39f20e683ed64156) for details on our code of conduct, and the process for submitting pull requests.
+Please read [contributing](https://gist.github.com/louiiuol/f1ca9436c877c85f39f20e683ed64156) file for details on our code of conduct, and the process for submitting pull requests.
 
 ## Authors
 
