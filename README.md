@@ -19,7 +19,7 @@ What things you need to install the software and how to install them:
 * [Spring](https://spring.io/) - Java Framework
 * [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html) - Database NOSQL Framework
 * [Node.js](https://nodejs.org/en/) - JS Server Framework
-* [Angular X](https://angular.io/) - JS Framework
+* [Angular X CLI](https://cli.angular.io/) - JS Framework used by commands
 * [Angular Material](https://material.angular.io/components/categories) - CSS & JS Framework
 
 ### Installing
@@ -40,11 +40,11 @@ mvn update
 mvn spring-boot:run -f pom.xml
 ```
 
-Launching Angular:
+Launching Angular Server:
 ```
 cd ./Operations_Filter/mybank-api/
-npm init
-npm start 
+ng build
+ng serve
 ```
 
 #### Once these steps are completed, got to the following [url](http://localhost:4200/) to access homepage. 
