@@ -77,3 +77,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/louiiuol/f1ca9436c877c85f3
 ## Authors
 
 * **Louis Godlewski**  - [louiiuol](https://github.com/louiiuol)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
