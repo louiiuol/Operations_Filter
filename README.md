@@ -14,11 +14,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them:
 
-* [JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-* [Maven](https://maven.apache.org/)
-* [Spring](https://spring.io/)
-* [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html)
-* [Node.js](https://nodejs.org/en/)
+* [JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java Environnement
+* [Maven](https://maven.apache.org/) - Packages Management
+* [Spring](https://spring.io/) - Java Framework
+* [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html) - Database NOSQL Framework
+* [Node.js](https://nodejs.org/en/) - JS Server Framework
 * [Angular X](https://angular.io/) - JS Framework
 * [Angular Material](https://material.angular.io/components/categories) - CSS & JS Framework
 
@@ -67,15 +67,6 @@ Link for field [types](https://github.com/louiiuol/Operations_Filter/blob/master
 ## Running the tests
 
 Tests are not implemented yet! 
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Spring](https://spring.io/) - Java Framework
-* [Angular X](https://angular.io/) - JS Framework
-* [Angular Material](https://material.angular.io/components/categories) - CSS & JS Framework
-* [Elastic Search](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html) - Database Search
-
 
 ## Contributing
 
